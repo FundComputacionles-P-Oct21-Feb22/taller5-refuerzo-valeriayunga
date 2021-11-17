@@ -1,0 +1,59 @@
+Problema 3
+En un comercial de venta de llantas tiene de vehículos de la ciudad de Loja, se hace 
+un descuento del 10% si el cliente pide un juego de llantas para un vehículo tipo "auto", 
+del 20% si el cliente pide un juego de llantas para un vehículo tipo "camioneta", 
+del 30% el cliente pide un juego de llantas para un vehículo tipo "bus". 
+Elaborar una solución que pida como datos de entrada el tipo de vehículo y 
+el valor del juego de llantas y el número de juegos de llantas para el vehículo. 
+Y luego calcule e imprima el subtotal por pagar y el total por pagar.
+
+1.Inicio
+
+2.tipo_vehiculo, d[0, n]
+3.valor_llantas, d[0, n]
+4.numero_llantas, i[0, n]
+5.descuendo1, d[0, n]
+6.descuendo2, d[0, n]
+7.descuendo3, d[0, n]
+8.porcentaje1, d[0, n] <-- 10
+9.porcentaje2, d[0, n] <-- 20
+10.porecentaje3, d[0, n] <-- 30
+11.subtotal, d[0, n]
+12.valorTotal, d[0, n]
+
+13.subtotal <-- valor_llantas * numero_llantas
+
+14.<<"Ingresar el tipo de vehículo"
+15.>>tipo_vehiculo
+
+16.<<"Ingresar el número de juegos de llantas"
+17.>>numero_llantas
+
+18.<<"Ingresar el valor del juego de llantas"
+19.>>valor_llantas
+
+20.Si tipo_vehiculo == "auto" entoces
+21.   descuento1 = (porcentaje1 * subtotal) / 100
+22.   valor_Total= subtotal - descuento1
+
+23.De lo contrario
+24.   Si tipo_vehiculo == "camioneta" entonces
+25.       descuento2 = (porcentaje2 * subtotal) / 100
+26.       valor_Total= subtotal - descuento2
+
+27.   De lo contrario
+28.      Si tipo_vehiculo == "bus" entonces
+29.          descuento3 = (porcentaje3 * subtotal) / 100
+30.          valor_Total= subtotal - descuento3
+
+31.      Fin Si
+32.   Fin Si
+33.Fin Si
+
+34.<<"El subtotal a pagar es:" + subtotal 
+35.<<"El valor total a pagar es:" + valorTotal
+
+
+
+
+

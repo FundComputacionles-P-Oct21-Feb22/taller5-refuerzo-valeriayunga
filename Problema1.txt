@@ -1,0 +1,59 @@
+Problema 1
+En un restaurante de la ciudad de Loja, se hace un descuento del 5% si el cliente tiene 
+una edad mayor a cero y menor o igual a 20, del 10% si el cliente tiene una edad mayor 
+a 20 y menor o igual 30 años , del 15% si la edad es mayor 30 años. 
+Elaborar una solución que pida como datos de entrada la edad y el valor del plato 
+(un cliente solo pide un plato) y luego calcule e imprima el subtotal por pagar y el 
+total por pagar.
+
+1.Inicio
+
+2.valor_plato, d[0, n]
+3.nombre_plato, d[0, n]
+4.edad, i[0, n]
+5.descuendo1, d[0, n]
+6.descuendo2, d[0, n]
+7.descuendo3, d[0, n]
+8.porcentaje1, d[0, n] <-- 5
+9.porcentaje2, d[0, n] <-- 10
+10.porecentaje3, d[0, n] <-- 15
+11.subtotal, d[0, n]
+12.valorTotal, d[0, n]
+
+13.<<"Ingresar la edad del usuario"
+14.>> edad
+
+15.<<"Ingresar el valor del plato"
+16.>>valor_plato
+
+17.<<"Ingrese el nombre del plaro"
+18.>>nombre_plato
+
+19.subtotal <-- valor_plato
+
+20.Si edad > 0 and edad edad <= 20 entonces
+21.   descuento1 <-- (porcentaje1 * subtotal) / 100
+22.   valorTotal <-- subtotal - descuento1
+
+23.De lo contrario
+24.   Si edad > 20 and edad <= 30 entonces
+25.      descuento2 <-- (porcentaje2 * subtotal) / 100
+26.      valorTotal <-- subtotal - descuento2   
+
+27.   De lo contrario 
+28.      Si edad > 30 entonces
+29.          descuento3 <-- (porcentaje3 * subtotal) / 100
+30.         valorTotal <-- subtotal - descuento3
+
+31.      Fin si
+32.   Fin si
+33.Fin si
+
+34.<<"El subtotal por pagar es:" + subtotal, "del plato:" + nombre_plato
+35.<<"El total a pagar es:" + valorTotal, "del plato:" + nombre_plato
+
+36.Fin
+
+
+
+

@@ -1,0 +1,58 @@
+Problema 2
+En una librería de la ciudad de Loja, se hace un descuento del 5% si el cliente tiene 
+una edad mayor a cero y menor 20, del 12% si el cliente tiene una edad mayor o igual a 
+20 y menor 40 años, del 20 % si la edad es mayor o igual a 40 años. Elaborar una solución 
+que pida como datos de entrada la edad del comprador y el valor del libro (un cliente solo 
+pide un libro) y luego calcule e imprima el subtotal por pagar y el total por pagar.
+
+1.Inicio
+
+2.valor_libro, d[0, n]
+3.nombre_libro, d[0, n]
+4.edad, i[0, n]
+5.descuendo1, d[0, n]
+6.descuendo2, d[0, n]
+7.descuendo3, d[0, n]
+8.porcentaje1, d[0, n] <-- 5
+9.porcentaje2, d[0, n] <-- 12
+10.porecentaje3, d[0, n] <-- 20
+11.subtotal, d[0, n]
+12.valorTotal, d[0, n]
+
+13.<<"Ingresar la edad del usuario"
+14.>> edad
+
+15.<<"Ingresar el valor del libro"
+16.>>valor_libro
+
+17.<<"Ingrese el nombre del libro"
+18.>>nombre_libro
+
+19.subtotal <-- valor_libro
+
+20.Si edad > 0 and edad edad < 20 entonces
+21.   descuento1 <-- (porcentaje1 * subtotal) / 100
+22.   valorTotal <-- subtotal - descuento1
+
+23.De lo contrario
+24.   Si edad >= 20 and edad < 40 entonces
+25.      descuento2 <-- (porcentaje2 * subtotal) / 100
+26.      valorTotal <-- subtotal - descuento2   
+
+27.   De lo contrario 
+28.      Si edad >= 40 entonces
+29.          descuento3 <-- (porcentaje3 * subtotal) / 100
+30.         valorTotal <-- subtotal - descuento3
+
+31.      Fin si
+32.   Fin si
+33.Fin si
+
+34.<<"El subtotal por pagar es:" + subtotal, "del libro:" + nombre_libro
+35.<<"El total a pagar es:" + valorTotal, "del libro:" + nombre_libro
+
+36.Fin
+
+
+
+
